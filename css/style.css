@@ -40,3 +40,31 @@ html {
     font-size: var(--font-size-base);
     color: rgb(255, 255, 255);
 }
+
+.register-button {
+    font-family: 'Outfit-SemiBold';
+    font-size: var(--font-size-base);
+    font-style: italic;
+    color: pink;
+}
+
+.register-button:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.icons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+
+    grid-column-start: span 3;
+}
+
+.menu-icon {
+    padding-right: 10px;
+
+    font-size: 80px;
+    color:rgb(255, 255, 255);
+}
