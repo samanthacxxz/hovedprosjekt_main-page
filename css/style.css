@@ -273,3 +273,115 @@ html {
     grid-column-start: span 1;
     grid-row-start: span 2;
 }
+
+.skintypes_title {
+    grid-row: 1 / 2;
+
+    width: 567px;
+
+    font-size: 80px;
+    text-align: right;
+    letter-spacing: -0.75px;
+
+    transform: translate(20%, 0%);
+}
+
+.skintype-categories_container {
+    display: flex;
+    flex-direction: block;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 683px;
+    height: 72px;
+    background: rgb(179, 213, 213);
+
+    border-radius: 20px;
+
+    transform: translate(0%, 100%);
+}
+
+.skintypes-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skintype {
+    width: max-content;
+
+    padding-inline: 20px;
+    padding-block: 26px;
+
+    font-size: var(--font-size-small);
+    font-family: 'Outfit-SemiBold';
+    letter-spacing: -0.25px;
+
+    transition: background 300ms ease;
+}
+
+.skintype:hover {
+    padding-block: 26px;
+    background: rgb(60, 91, 103);
+
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.skincare-brands {
+    display: flex;
+    flex-flow: column;
+
+    width: 1440px;
+    height: 515px;
+    background: rgb(115, 144, 155);
+
+    color: rgb(255, 255, 255);
+
+    padding-bottom: 23px;
+}
+
+.skincare-brands_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    font-size: var(--font-size-large);
+}
+
+.brands_subcontainer {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.brands_column {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.brand {
+    padding: 20px;
+}
+
+.brand:hover {
+    width: max-content;
+    height: max-content;
+
+    padding: 20px;
+
+    background: rgb(64, 103, 119);
+
+    color: rgb(255, 255, 255);
+
+    transition: background 300ms ease;
+
+    cursor: pointer;
+}
