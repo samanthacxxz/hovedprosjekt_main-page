@@ -268,3 +268,8 @@ html {
 
     border-radius: 100%;
 }
+
+.grid-right {
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+}
