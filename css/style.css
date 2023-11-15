@@ -111,3 +111,112 @@ html {
 
     cursor: pointer;
 }
+
+.after-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+
+    padding-bottom: 82px;
+}
+
+.grid-left {
+    display: block;
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+    padding-left: 30px;
+}
+
+.slideshow_title {
+    font-size: 30px;
+}
+
+.slideshow_recs {
+    position: relative;
+    width: 538px;
+    height: 508px;
+    background: rgb(255, 255, 255);
+}
+
+.slideshow_slides {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.slideshow_slide {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+    width: 50%;
+	height: 50%;
+
+	display: none;
+}
+
+.slideshow_slide--visible {
+    display: block;
+}
+
+.slideshow_img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.slideshow_caption {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    text-align: center;
+}
+
+.slideshow_recs_controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+}
+
+.slideshow_control-button {
+    width: 1rem;
+    height: 1rem;
+
+    background: grey;
+
+    border-radius: 100%;
+    padding: 0.2rem;
+
+    cursor: pointer;
+}
+
+.slideshow_recs_dots {
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: absolute;
+    left: 50%;
+
+    gap: 0.2rem;
+    padding: 0.2rem;
+
+    transform: translateX(-50%);
+}
+
+.slideshow_dot {
+    display: block;
+
+    width: 0.5rem;
+    height: 0.5rem;
+
+    background: rgb(118, 118, 118);
+
+    border-radius: 100%;
+}
