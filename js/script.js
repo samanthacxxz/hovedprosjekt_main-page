@@ -66,3 +66,11 @@ const sectionOurBrands = document.querySelector('.skincare-brands');
 buttonOurBrands.addEventListener('click', function () {
 	sectionOurBrands.scrollIntoView({ behavior: 'smooth'});
 });
+
+/*scrolling back to top of the page */
+
+const plusIcon = document.querySelector('.menu-icon')
+
+plusIcon.addEventListener('click', function () {
+	document.documentElement.scrollTop = 0;
+});

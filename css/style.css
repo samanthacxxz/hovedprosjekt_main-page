@@ -63,14 +63,15 @@ html {
 }
 
 .menu-icon {
+    position: fixed;
     padding-right: 10px;
 
     font-size: 80px;
-    color:rgb(255, 255, 255);
+    color: pink;
 }
 
 .menu-icon:hover{
-    color: pink;
+    color: rgb(211, 127, 141);
 
     cursor: pointer;
 }
