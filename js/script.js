@@ -58,3 +58,11 @@ const changeSlide = (event) => {
 controls.forEach(button => {
 	button.addEventListener('click', changeSlide);
 })
+
+/*Scrolling to brands section */
+const buttonOurBrands = document.querySelector('.category_our-brands');
+const sectionOurBrands = document.querySelector('.skincare-brands');
+
+buttonOurBrands.addEventListener('click', function () {
+	sectionOurBrands.scrollIntoView({ behavior: 'smooth'});
+});
