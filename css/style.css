@@ -320,6 +320,9 @@ html {
     padding-inline: 20px;
     padding-block: 26px;
 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
     font-size: var(--font-size-small);
     font-family: 'Outfit-SemiBold';
     letter-spacing: -0.25px;
@@ -330,6 +333,9 @@ html {
 .skintype:hover {
     padding-block: 26px;
     background: rgb(60, 91, 103);
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     color: rgb(255, 255, 255);
 
