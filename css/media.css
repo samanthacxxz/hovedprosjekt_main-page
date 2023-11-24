@@ -1,0 +1,64 @@
+@media (max-width: 1320px) {
+    .brand-slogan {
+        display: none;
+    }
+    .brand-title {
+        font-size: var(--font-size-large);
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 810px) {
+    .brand-title {
+        display: none;
+    }
+    
+    .brand-title--media {
+        display: initial;
+    }
+
+
+    .header_container {
+        height: 90px;
+    }
+    .category {
+        padding-inline: 20px;
+    }
+
+    .after-main {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-left {
+        padding-left: 0px;
+    }
+ 
+    .slideshow_recs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .skintypes_title {
+        text-align: center;
+        font-size: var(--font-size-large);
+    }
+
+}
+
+@media (max-width: 510px) {
+    .menu-bar_container {
+        height: 30px;
+    }
+    .category {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 480px){
+
+
+
+}
