@@ -11,4 +11,13 @@
     --font-leading-small: 1rem;
     --font-leading-medium: 1rem;
     --font-leading-large: 1rem;
+
+    --color-background: rgb(237, 248, 248);
+    
+    --color-primary: rgb(60, 91, 103);
+    --color-secondary: rgb(255, 255, 255);
+    --color-tertiary: rgb(115, 144, 155);
+
+    --color-accent-one: rgb(255, 192, 203);
+    --color-accent-two: rgb(211,127,141);
 }
