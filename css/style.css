@@ -73,9 +73,9 @@ html {
 }
 
 .menu-icon {
-    position: fixed;
-    z-index: 10;
+    position: fixed;    
     padding-right: 10px;
+    z-index: 10;
 
     font-size: 80px;
     color: var(--color-accent-one);
