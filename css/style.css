@@ -1,7 +1,9 @@
 html {
     font-family: 'Outfit-Medium';
     font-size: var(--font-size-base);
-    background: rgb(237, 248, 248);
+    background: var(--color-background);
+
+    scroll-behavior: smooth;
 }
 
 .header_container {
@@ -10,10 +12,8 @@ html {
 
     width: 100%;
     height: 120px;
-    background: rgb(60, 91, 103);
+    background: var(--color-primary);
 }
-
-
 
 .brand-title,
 .brand-title--media {
@@ -26,9 +26,10 @@ html {
     padding-left: 27px;
 
     font-size: 70px;
-    color: rgb(255, 255, 255);
+    color: var(--color-secondary);
     letter-spacing: -2px;
 }
+
 .brand-title--media {
     display: none;
 }
@@ -46,18 +47,19 @@ html {
     padding-left: 43px;
 
     font-size: var(--font-size-base);
-    color: rgb(255, 255, 255);
+    color: var(--color-secondary);
 }
 
 .register-button {
     font-family: 'Outfit-SemiBold';
-    font-size: var(--font-size-base);
     font-style: italic;
-    color: pink;
+    font-size: var(--font-size-base);
+    color: var(--color-accent-one);
 }
 
 .register-button:hover {
-    color: rgb(255, 255, 255);
+    color: var(--color-secondary);
+    
     cursor: pointer;
 }
 
@@ -71,15 +73,16 @@ html {
 }
 
 .menu-icon {
-    position: static;
+    position: fixed;
+    z-index: 10;
     padding-right: 10px;
 
     font-size: 80px;
-    color: pink;
+    color: var(--color-accent-one);
 }
 
 .menu-icon:hover{
-    color: rgb(211, 127, 141);
+    color: var(--color-accent-two);
 
     cursor: pointer;
 }
@@ -93,7 +96,6 @@ html {
 
     width: 100%;
     height: 55px;
-    background: rgb(237, 248, 248);
 }
 
 .menu-bar_categories {
@@ -119,12 +121,11 @@ html {
 
 .category:hover {
     padding-block: 20px;
-    background: rgb(60, 91, 103);
+    background: var(--color-primary);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
-
-    color: rgb(255, 255, 255);
+    color: var(--color-secondary);
 
     cursor: pointer;
 }
@@ -153,10 +154,10 @@ html {
 
     width: 520px;
     height: 178px;
-    background: rgb(179, 197, 213);
+    background: var(--color-tertiary);
 
     font-size: var(--font-size-large);
-    color: rgb(237, 248, 248);
+    color: var(--color-primary);
 }
 
 .news {
@@ -169,7 +170,11 @@ html {
 .first-line {
     font-family: 'Outfit-Bold';
     font-style: italic;
-    color: darkred;
+    color: rgb(92, 12, 12);
+}
+
+.second-line {
+    color: var(--color-secondary);
 }
 
 .after-main {
@@ -196,13 +201,13 @@ html {
     position: relative;
     width: 538px;
     height: 508px;
-    background: rgb(255, 255, 255);
+    background: var(--color-secondary);
 }
 
 .slideshow_slides {
     width: 100%;
     height: 100%;
-    background: rgb(255, 255, 255);
+    background: var(--color-secondary);
 }
 
 .slideshow_slide {
@@ -247,15 +252,26 @@ html {
 }
 
 .slideshow_control-button {
-    width: 1rem;
-    height: 1rem;
+    width: var(--font-size-small);
+    height: var(--font-size-small);
 
-    background: grey;
+    color: black;
+    background: transparent;
 
     border-radius: 100%;
     padding: 0.2rem;
 
     cursor: pointer;
+}
+
+.control-button-left {
+    transform: rotate(90deg);
+    padding-left: 50px;
+}
+
+.control-button-right {
+    transform: rotate(270deg);
+    padding-right: 50px;
 }
 
 .slideshow_recs_dots {
@@ -264,6 +280,7 @@ html {
 
     position: absolute;
     left: 50%;
+    top: 90%;
 
     gap: 0.2rem;
     padding: 0.2rem;
@@ -280,6 +297,10 @@ html {
     background: rgb(118, 118, 118);
 
     border-radius: 100%;
+}
+
+.slideshow_dot--active {
+    background-color: var(--color-accent-two);
 }
 
 .grid-right {
@@ -307,7 +328,7 @@ html {
 
     width: 683px;
     height: 72px;
-    background: rgb(179, 213, 213);
+    background: var(--color-tertiary);
 
     border-radius: 20px;
 
@@ -339,12 +360,12 @@ html {
 
 .skintype:hover {
     padding-block: 26px;
-    background: rgb(60, 91, 103);
+    background: var(--color-primary);
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    color: rgb(255, 255, 255);
+    color: var(--color-secondary);
 
     cursor: pointer;
 }
@@ -355,9 +376,9 @@ html {
 
     width: 1440px;
     height: 515px;
-    background: rgb(115, 144, 155);
+    background: var(--color-tertiary);
 
-    color: rgb(255, 255, 255);
+    color: var(--color-secondary);
 
     padding-bottom: 23px;
 }
@@ -395,10 +416,10 @@ html {
     height: max-content;
 
     padding: 20px;
+    border-radius: 20px;
 
-    background: rgb(64, 103, 119);
-
-    color: rgb(255, 255, 255);
+    background: var(--color-primary);
+    color: var(--color-secondary);
 
     transition: background 300ms ease;
 
