@@ -7,6 +7,11 @@ let index = 0;
 const totalSlides = slides.length;
 const lastIndex = slides.length - 1;
 
+const slidesDots = document.querySelectorAll('.slideshow__dot');
+
+
+console.log(totalSlides);
+
 const goToPreviousSlide = () => {
 	if (index === 0) {
 		index = lastIndex;
