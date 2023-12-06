@@ -9,61 +9,6 @@ const lastIndex = slides.length - 1;
 
 const slidesDots = document.querySelectorAll('.slideshow_dot');
 
-/*
-console.log(totalSlides);
-
-const goToPreviousSlide = () => {
-	if (index === 0) {
-		index = lastIndex;
-	} else {
-		index = index - 1;
-	}
-
-	console.log(index);
-
-	// update classes
-	slides.forEach(slide => {
-		slide.classList.remove('slideshow_slide--visible');
-	});
-
-	slides[index].classList.add('slideshow_slide--visible');
-};
-
-const goToNextSlide = () => {
-	// increase index
-	if (index < lastIndex) {
-		index = index + 1;
-	} else {
-		index = 0;
-	}
-
-	console.log(index);
-
-	// update classes
-	slides.forEach(slide => {
-		slide.classList.remove('slideshow_slide--visible');
-	});
-
-	slides[index].classList.add('slideshow_slide--visible');
-};
-
-
-const changeSlide = (event) => {
-	const button = event.currentTarget;
-
-	if (button.dataset.direction === 'previous') {
-		goToPreviousSlide();
-	}
-
-	if (button.dataset.direction === 'next') {
-		goToNextSlide();
-	}
-}
-
-controls.forEach(button => {
-	button.addEventListener('click', changeSlide);
-})
-*/
 const goToPreviousSlide = () => {
     if (index === 0) {
         index = lastIndex;
@@ -169,7 +114,7 @@ buttonOurBrands.addEventListener('click', function () {
 
 /*scrolling back to top of the page */
 
-const plusIcon = document.querySelector('.menu-icon');
+const plusIcon = document.querySelector('.menu-icon')
 
 plusIcon.addEventListener('click', function () {
 	document.documentElement.scrollTop = 0;
