@@ -114,7 +114,7 @@ buttonOurBrands.addEventListener('click', function () {
 
 /*scrolling back to top of the page */
 
-const plusIcon = document.querySelector('.menu-icon')
+const plusIcon = document.querySelector('.menu-icon');
 
 plusIcon.addEventListener('click', function () {
 	document.documentElement.scrollTop = 0;
