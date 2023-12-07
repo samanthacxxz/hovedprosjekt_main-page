@@ -112,6 +112,36 @@ controls.forEach(button => {
 // Add event listener for keyboard arrow keys
 document.addEventListener('keydown', handleKeyDown);
 
+// showcasing a category after clicking the button
+
+const categoryButtons = document.querySelectorAll('.product-category_button');
+const categories = document.querySelectorAll('.category');
+
+categoryButtons.forEach(button => {
+	button.addEventListener('click', showcaseProductCategory)
+});
+
+function showcaseProductCategory(event) {
+	const button = event.currentTarget;
+	const productCategoryToShow = button.dataset.products;
+
+	categories.forEach(category => {
+		category.classList.remove('category--visible');
+		
+		if (category.dataset.category === productCategoryToShow) {
+			category.classList.add('category--visible');
+		}
+	});
+
+	categoryButtons.forEach(button => {
+		button.classList.remove('product-category_button--active');
+
+		if (button.dataset.products === productCategoryToShow) {
+			button.classList.add('product-category_button--active')
+		}
+	});
+}
+
 //appearence of thankyou-message after clicking register button
 
 const registrationBox = document.querySelector('.registration-signup');

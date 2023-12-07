@@ -1,6 +1,6 @@
 :root {
     --spacing-small: 1rem;
-    --spacing-medium: 2rem;
+    --spacing-base: 2rem;
     --spacing-large: 4rem;
 
     --font-size-base: 20px;
