@@ -6,41 +6,6 @@
         font-size: var(--font-size-large);
         letter-spacing: -1px;
     }
-}
-
-@media (max-width: 810px) {
-    /* header - brand name, register, icon*/
-    .header_container {
-        height: 90px;
-    }
-    .brand-title {
-        display: none;
-    }
-    
-    .brand-title--media {
-        display: initial;
-    }
-
-    .header-text_container,
-    .register-button {
-        font-size: var(--font-size-small);
-    }
-
-    /* menu bar section*/ 
-    .category {
-        padding-inline: 20px;
-    }
-
-    /* news section*/
-    .news_container {
-        width: 300px;
-    }
-
-    .first-line ,
-    .second-line {
-        font-size: var(--font-size-base);
-    }
-
     /* next section after news*/
     .after-main {
         display: flex;
@@ -100,11 +65,51 @@
 
         transform: translate(0%, 0%);
     }
-
-    /* brands section*/
+    
     .skincare-brands {
         width: 100%;
     }
+
+}
+
+@media (max-width: 810px) {
+    /* header - brand name, register, icon*/
+    .header_container {
+        height: 90px;
+    }
+    .brand-title {
+        display: none;
+    }
+    
+    .brand-title--media {
+        display: initial;
+    }
+
+    .header-text_container,
+    .register-button {
+        font-size: var(--font-size-small);
+    }
+
+    /* menu bar section*/ 
+    .category {
+        padding-inline: 20px;
+    }
+
+    /* news section*/
+    .news_container {
+        width: 300px;
+    }
+
+    .first-line ,
+    .second-line {
+        font-size: var(--font-size-base);
+    }
+
+    
+
+    /* brands section*/
+
+
 }
 
 @media (max-width: 510px) {
