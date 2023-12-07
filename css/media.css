@@ -95,7 +95,7 @@
     }
 
     /* menu bar section*/ 
-    .category {
+    .category-button {
         padding-inline: 20px;
     }
 
@@ -107,6 +107,14 @@
     .first-line ,
     .second-line {
         font-size: var(--font-size-base);
+    }
+
+    .product-showcase_container {
+        height: 1100px;
+    }
+
+    .products_images {
+        flex-flow: column nowrap;
     }
      /* Registration box section */
 
@@ -131,7 +139,7 @@
     .signup-button {
         width: 300px;
     }
-    
+
     /* brands section*/
 
     .skincare-brands {
@@ -161,9 +169,10 @@
         height: 30px;
     }
 
-    .category {
+    .category-button {
         font-size: var(--font-size-extrasmall);
     }
+
 
     .brand {
         font-size: var(--font-size-extrasmall);
