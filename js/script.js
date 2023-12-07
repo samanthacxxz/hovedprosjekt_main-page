@@ -1,3 +1,20 @@
+/*scrolling back to top of the page */
+
+const plusIcon = document.querySelector('.menu-icon');
+
+plusIcon.addEventListener('click', function () {
+	document.documentElement.scrollTop = 0;
+});
+
+/*Scrolling to brands section */
+const buttonOurBrands = document.querySelector('.category_our-brands');
+const sectionOurBrands = document.querySelector('.skincare-brands');
+
+buttonOurBrands.addEventListener('click', function () {
+	sectionOurBrands.scrollIntoView({ behavior: 'smooth'});
+});
+
+
 /* for slideshow - recommendations */
 const slideshow = document.querySelector('.slideshow_recs');
 const slides = slideshow.querySelectorAll('.slideshow_slide');
@@ -92,30 +109,7 @@ controls.forEach(button => {
     button.addEventListener('click', changeSlide);
 });
 
-
-const updateSlideNumber = () => {
-    // Update the slide number display
-    slideNumberDisplay.textContent = `${index + 1} / ${totalSlides}`;
-};
-
 // Add event listener for keyboard arrow keys
 document.addEventListener('keydown', handleKeyDown);
 
-// Initial update of slide number
-updateSlideNumber();
 
-/*Scrolling to brands section */
-const buttonOurBrands = document.querySelector('.category_our-brands');
-const sectionOurBrands = document.querySelector('.skincare-brands');
-
-buttonOurBrands.addEventListener('click', function () {
-	sectionOurBrands.scrollIntoView({ behavior: 'smooth'});
-});
-
-/*scrolling back to top of the page */
-
-const plusIcon = document.querySelector('.menu-icon');
-
-plusIcon.addEventListener('click', function () {
-	document.documentElement.scrollTop = 0;
-});
