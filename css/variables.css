@@ -9,9 +9,8 @@
     --font-size-extrasmall: 0.5rem;
 
     --font-leading-base: 1rem;
-    --font-leading-small: 1rem;
-    --font-leading-medium: 1rem;
-    --font-leading-large: 1rem;
+    --font-leading-small: 0.5rem;
+    --font-leading-large: 2rem;
 
     --color-background: rgb(237, 248, 248);
     
