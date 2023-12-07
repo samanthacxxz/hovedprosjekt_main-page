@@ -6,6 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Header section */
 .header_container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -87,6 +88,8 @@ html {
     cursor: pointer;
 }
 
+/* Menu bar - about us, products, our brands etx*/
+
 .menu-bar_container {
     position: relative;
     display: flex;
@@ -146,6 +149,8 @@ html {
     background-image: url(../assets/images/main_page/homepage_products-main.jpeg);
 }
 
+/* News about 2023 products container*/
+
 .news_container {
     display: flex;
     flex-flow: column;
@@ -185,6 +190,8 @@ html {
     padding-bottom: 82px;
 }
 
+/* Left side of grid, top part - media query*/
+
 .grid-left,
 .media-top {
     display: block;
@@ -193,120 +200,15 @@ html {
     padding-left: 30px;
 }
 
-.slideshow_title {
-    font-size: 30px;
-}
 
-.slideshow_recs {
-    position: relative;
-    width: 538px;
-    height: 508px;
-    background: var(--color-secondary);
-}
-
-.slideshow_slides {
-    width: 100%;
-    height: 100%;
-    background: var(--color-secondary);
-}
-
-.slideshow_slide {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-
-    width: 50%;
-	height: 50%;
-
-	display: none;
-}
-
-.slideshow_slide--visible {
-    display: block;
-}
-
-.slideshow_img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-}
-
-.slideshow_caption {
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    text-align: center;
-}
-
-.slideshow_recs_controls {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-}
-
-.slideshow_control-button {
-    width: var(--font-size-small);
-    height: var(--font-size-small);
-
-    color: black;
-    background: transparent;
-
-    border-radius: 100%;
-    padding: 0.2rem;
-
-    cursor: pointer;
-}
-
-.control-button-left {
-    transform: rotate(90deg);
-    padding-left: 50px;
-}
-
-.control-button-right {
-    transform: rotate(270deg);
-    padding-right: 50px;
-}
-
-.slideshow_recs_dots {
-    display: flex;
-    flex-flow: row nowrap;
-
-    position: absolute;
-    left: 50%;
-    top: 90%;
-
-    gap: 0.2rem;
-    padding: 0.2rem;
-
-    transform: translateX(-50%);
-}
-
-.slideshow_dot {
-    display: block;
-
-    width: 0.5rem;
-    height: 0.5rem;
-
-    background: rgb(118, 118, 118);
-
-    border-radius: 100%;
-}
-
-.slideshow_dot--active {
-    background-color: var(--color-accent-two);
-}
+/* Right side of grid, lower part - media query*/
 
 .grid-right {
     grid-column-start: span 1;
     grid-row-start: span 2;
 }
+
+/* Skin types section */
 
 .skintypes_title {
     grid-row: 1 / 2;
@@ -371,6 +273,7 @@ html {
 }
 
 /* products section*/
+
 .main-section {
     display: flex;
     flex-flow: column;
@@ -425,7 +328,7 @@ html {
 
 .product-showcase_container {
     width: 1046px;
-    height: 708px;
+    height: 520px;
 
     display: flex;
     flex-direction: column;
@@ -491,8 +394,6 @@ figcaption {
 
 .registration-welcome {
     font-size: 50px;
-
-    padding: 42px;
 }
 
 .registration_container {
@@ -588,6 +489,7 @@ figcaption {
 }
 
 /* The pop-up message after clicking on "Create Account" button*/
+
 .pop-up {
     display: flex;
     flex-flow: column;
