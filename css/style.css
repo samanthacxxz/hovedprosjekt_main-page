@@ -105,7 +105,7 @@ html {
     align-items: center;
 }
 
-.category {
+.category-button {
     background: transparent;
 
     font-family: 'Outfit-SemiBold';
@@ -119,7 +119,7 @@ html {
     transition: background 300ms ease;
 }
 
-.category:hover {
+.category-button:hover {
     padding-block: 20px;
     background: var(--color-primary);
     border-bottom-left-radius: 20px;
@@ -368,6 +368,161 @@ html {
     color: var(--color-secondary);
 
     cursor: pointer;
+}
+
+
+
+/* Registration section */
+
+.registration-signup {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    padding-bottom: 50px;
+}
+
+.registration-welcome {
+    font-size: 50px;
+
+    padding: 42px;
+}
+
+.registration_container {
+    width: 780px;
+    height: 905px;
+    background: var(--color-accent-one);
+    
+    display: flex;
+    flex-flow: column nowrap;
+
+    border-radius: 20px;
+
+    font-family: 'Outfit-Light';
+    font-size: var(--font-size-small);
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-size-large);
+
+    padding: 60px;
+}
+
+.input-box {
+    width: 584px;
+    height: 35px;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 14px;
+}
+
+.label,
+.label-gender,
+.label-birthday {
+    display: flex;
+    flex-flow: column;
+}
+
+.gender-birthday_section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkbox_section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+.terms {
+    text-align: justify;
+}
+
+.button_container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+
+}
+.signup-button {
+    background: var(--color-tertiary);
+    width: 584px;
+    height: 88px;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    border-radius: 20px;
+
+    font-size: var(--font-size-large);
+    font-family: 'Outfit-SemiBold';
+    color: var(--color-accent-one);
+}
+
+.signup-button:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/* The pop-up message after clicking on "Create Account" button*/
+.pop-up {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.registration-message_container {
+    display: none;
+}
+
+.registration-message_container--visible {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 250px;
+
+    border-radius: 20px;
+
+    background: var(--color-accent-one);
+    color: var(--color-secondary);
+}
+
+.closing-button {
+    padding: 10px;
+}
+
+.pop-up_redirect {
+    font-family: 'Outfit-SemiBold';
+    color: var(--color-secondary);
+}
+
+.pop-up_redirect:hover {
+    color: var(--color-accent-two);
 }
 
 .skincare-brands {
