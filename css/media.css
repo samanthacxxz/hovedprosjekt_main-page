@@ -1,4 +1,6 @@
 @media (max-width: 1320px) {
+    /* header section*/
+
     .brand-slogan {
         display: none;
     }
@@ -65,6 +67,8 @@
 
         transform: translate(0%, 0%);
     }
+
+    /*brand section*/
     
     .skincare-brands {
         width: 100%;
@@ -141,10 +145,4 @@
     .brand {
         font-size: var(--font-size-extrasmall);
     }
-}
-
-@media (max-width: 480px){
-
-
-
 }
