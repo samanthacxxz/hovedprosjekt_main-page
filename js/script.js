@@ -1,9 +1,25 @@
-/*scrolling back to top of the page */
+/*scrolling back to top of the page by clicking the icon on top rihgt */
 
 const plusIcon = document.querySelector('.menu-icon');
 
 plusIcon.addEventListener('click', function () {
 	document.documentElement.scrollTop = 0;
+});
+
+/*Scrolling to registration section */
+const buttonRegister = document.querySelector('.register-button');
+const sectionRegistration = document.querySelector('.registration-signup');
+
+buttonRegister.addEventListener('click', function () {
+	sectionRegistration.scrollIntoView({ behavior: 'smooth'});
+});
+
+/*Scrolling to about us section */
+const buttonAboutUs = document.querySelector('.category_about-us');
+const sectionAboutUs = document.querySelector('.about-us_container');
+
+buttonAboutUs.addEventListener('click', function () {
+	sectionAboutUs.scrollIntoView({ behavior: 'smooth'});
 });
 
 /*Scrolling to brands section */
@@ -163,5 +179,11 @@ registerButton.addEventListener('click', () => {
 	popUp.classList.toggle('registration-message_container--visible');
 });
 
+// closing popup -> scrolling back to top page 
 
+const popUpRedirect = document.querySelector('.pop-up_redirect');
 
+popUpRedirect.addEventListener('click', function () {
+	document.documentElement.scrollTop = 0;
+    popUp.classList.remove('registration-message_container--visible');
+});
