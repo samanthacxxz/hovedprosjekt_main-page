@@ -14,6 +14,14 @@ buttonOurBrands.addEventListener('click', function () {
 	sectionOurBrands.scrollIntoView({ behavior: 'smooth'});
 });
 
+/*Scrolling to products section */
+const buttonProducts = document.querySelector('.category_products');
+const sectionProducts = document.querySelector('.main-section');
+
+buttonProducts.addEventListener('click', function () {
+	sectionProducts.scrollIntoView({ behavior: 'smooth'});
+});
+
 
 /* for slideshow - recommendations */
 const slideshow = document.querySelector('.slideshow_recs');
