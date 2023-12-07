@@ -112,4 +112,18 @@ controls.forEach(button => {
 // Add event listener for keyboard arrow keys
 document.addEventListener('keydown', handleKeyDown);
 
+//appearence of thankyou-message after clicking register button
+
+const registrationBox = document.querySelector('.registration-signup');
+const registerButton = document.querySelector('.signup-button');
+const popUp = document.querySelector('.registration-message_container');
+
+//clicking "Create Account" button -> removing registration form, showing thankyou message
+
+registerButton.addEventListener('click', () => {
+	registrationBox.style.display = 'none'
+	popUp.classList.toggle('registration-message_container--visible');
+});
+
+
 

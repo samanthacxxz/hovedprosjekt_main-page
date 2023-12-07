@@ -370,6 +370,111 @@ html {
     cursor: pointer;
 }
 
+/* products section*/
+.main-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+    width: 1440px;
+    height: 75px;
+    
+    display: flex;
+    flex-flow: block;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: var(--font-size-large);
+}
+
+.products-categories_container {
+    width: 563px;
+    height: 25px;
+    padding-bottom: 75px;
+}
+
+.products-categories {
+    background: var(--color-primary);
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.product-category_button {
+    font-family: 'Outfit-SemiBold';
+    color: var(--color-secondary);
+
+    transition: color 300ms ease;
+}
+
+.product-category_button:hover {
+    color: var(--color-accent-one);
+}
+
+.product-category_button--active {
+    color: var(--color-accent-two);
+}
+
+.product-showcase_container {
+    width: 1046px;
+    height: 708px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: var(--spacing-base);
+}
+
+.category {
+    display: none;
+}
+
+.category--visible {
+    display: flex;
+}
+.products_images {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--spacing-base);
+}
+
+figure {
+    width: 300px;
+    height: 300px;  
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+} 
+
+img {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 20px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.image_caption {
+    font-family: 'Outfit-Light';
+    font-size: var(--font-size-small);
+}
 
 
 /* Registration section */

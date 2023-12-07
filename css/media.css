@@ -108,7 +108,30 @@
     .second-line {
         font-size: var(--font-size-base);
     }
+     /* Registration box section */
 
+     .registration-welcome {
+        font-size: var(--font-size-large);
+    }
+
+    .registration_container {
+        width: 465px;
+        font-size: var(--font-size-extrasmall);
+    }
+
+    .title {
+        font-size: var(--font-size-base);
+    }
+
+    .input-box {
+        width: 350px;
+        font-size: var(--font-size-extrasmall);
+    }
+
+    .signup-button {
+        width: 300px;
+    }
+    
     /* brands section*/
 
     .skincare-brands {
