@@ -15,4 +15,12 @@ skincanvas+ is a website that sells skin care and showcases popular products in 
 - See our slideshow which showcases our current recommendations
 - Have an overview of our skin care brands
 
+-- Motivation --
 
+The creation of skincanvas+ is a part of a semester project. This project is one of my first, and I have gained new knowledge about front-end throughout this semester. It is just a starting point for me, as I will continue to learn more in order to create better websites.
+
+-- Techs used --
+
+- HTML
+- CSS
+- JavaScript
